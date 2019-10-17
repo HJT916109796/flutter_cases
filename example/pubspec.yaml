@@ -13,6 +13,87 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  # 屏幕适配 https://github.com/OpenFlutter/flutter_screenutil
+  flutter_screenutil: ^0.6.0
+  # Toast插件 https://github.com/OpenFlutter/flutter_oktoast
+  oktoast: ^2.2.0
+  # 网络请求框架
+  dio: ^2.1.2
+  # json生成
+  json_annotation: ^2.2.0
+  # 数据存储
+  shared_preferences: ^0.5.2
+  # 下载器
+  flutter_downloader: ^1.1.7
+  # 获取系统路径
+  path_provider: ^1.3.0
+  # 系统权限管理
+  #permission_handler: ^3.0.1
+  # 通知权限管理
+  #notification_permissions: ^0.4.0
+  # 代码包信息
+  package_info: ^0.4.0+6
+  # 设备信息
+  device_info: ^0.4.0
+  # 生成uuid
+  uuid: 2.0.2
+  # TODO 常见插件
+  # swiper-轮播插件
+  flutter_swiper: ^1.1.6
+  # 瀑布流插件 https://github.com/letsar/flutter_staggered_grid_view
+  flutter_staggered_grid_view: ^0.3.0
+  # webview-插件
+  flutter_webview_plugin: ^0.3.4
+  # 打电话,打开链接
+  url_launcher: ^5.0.2
+  # loading 样式组件
+  flutter_spinkit: ^4.0.0
+  # pdf浏览器
+  flutter_full_pdf_viewer: ^1.0.4
+  # TODO: 键盘管理⌨️
+  # 避免输入框被键盘遮挡
+  keyboard_avoider: ^0.1.2
+  # 监听键盘显隐
+  keyboard_visibility: ^0.5.6
+  # TODO: 选择器
+  # 选择器
+  flutter_picker: ^1.0.13
+  # 日期选择器
+  flutter_cupertino_date_picker: ^1.0.12
+  # 图片浏览器: https://pub.flutter-io.cn/packages/photo_view
+  photo_view: ^0.5.0
+  # 图片裁剪
+  image_cropper: ^1.0.2
+  # 图片选择
+  image_picker: ^0.6.1+2
+  # 小红点插件 badge https://pub.dev/packages/flutter_badge
+  flutter_badge: ^0.0.1
+  # 自定义上拉加载和下拉刷新效果 flutter_easyrefresh 前提：必须是一个ListView
+  flutter_easyrefresh: ^1.2.7
+  # TODO:状态管理
+  provider: ^3.0.0+1
+  # TODO:事件传递
+  event_bus: ^1.1.0
+  # TODO:路由框架
+  fluro: ^1.5.1
+  # TODO:第三方SDK
+  # qq sdk
+  #flutter_qq: ^0.0.5
+
+
+
+
+
+
+
+
+
+
+  # Flutter 调试工具：OnlyForAndroid
+#  flutter_flipperkit:
+#    git:
+#      url: https://github.com/blankapp/flutter_flipperkit
+#      ref: stable
 
 dev_dependencies:
   flutter_test:

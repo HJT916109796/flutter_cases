@@ -1,10 +1,30 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
-
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'dart:async';
+//import 'package:flutter_flipperkit/flutter_flipperkit.dart';
+import 'package:oktoast/oktoast.dart';
 import 'package:flutter_cases/flutter_cases.dart';
+import 'package:flutter_cases_example/utils/toast.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  // 插件初始化
+  config();
+
+  runApp(MyApp());
+}
+
+/// 插件初始化
+void config() async {
+
+  /// TODO:flutter 调试工具
+//  FlipperClient flipperClient = FlipperClient.getDefault();
+//  flipperClient.addPlugin(new FlipperNetworkPlugin());
+//  flipperClient.addPlugin(new FlipperSharedPreferencesPlugin());
+//  flipperClient.start();
+
+
+}
 
 class MyApp extends StatefulWidget {
   @override
@@ -41,14 +61,37 @@ class _MyAppState extends State<MyApp> {
   }
 
   @override
+  void didChangeDependencies() {
+    // TODO: implement didChangeDependencies
+    super.didChangeDependencies();
+    // TODO: ScreenUtil 初始化
+    //ScreenUtil.instance = ScreenUtil(width: 750, height: 1334)..init(context);
+  }
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+
+    return OKToast(
+      textPadding: EdgeInsets.only(
+        left: 20,
+        right: 20,
+        top: 10,
+        bottom: 10,
+      ),
+      radius: 12,
+      child: MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            centerTitle: false,
+            title: const Text('Flutter Cases Summary'),
+          ),
+          body: GestureDetector(
+            child: Center(
+              child: Text('BACBon: $_platformVersion\n'),
+            ),
+            onTap: () {
+              Toast.show('哈哈');
+            },
+          ),
         ),
       ),
     );
