@@ -18,7 +18,7 @@ dependencies:
   # Toast插件 https://github.com/OpenFlutter/flutter_oktoast
   oktoast: ^2.2.0
   # 网络请求框架
-  dio: ^2.1.2
+  dio: ^5.0.3
   # json生成
   json_annotation: ^2.2.0
   # 数据存储
